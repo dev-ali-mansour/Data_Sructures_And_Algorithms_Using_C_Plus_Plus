@@ -1,30 +1,31 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 // Rule 2: Remove Constants
 
 template<class T>
-void printFirstItemThenFirstHalfThenSayHi100Times(const T [], int);
+void printFirstItemThenFirstHalfThenSayHi100Times(vector<T> items);
 
 template<class T>
-void compressBoxesTwice(const T [], int);
+void compressBoxesTwice(vector<T> boxes);
 
 int main() {
-    int items[] = {1, 5, 6, 9, 8};
-    printFirstItemThenFirstHalfThenSayHi100Times(items, size(items));
+    vector<int> items = {1, 5, 6, 9, 8};
+    printFirstItemThenFirstHalfThenSayHi100Times(items);
 
-    compressBoxesTwice(items, size(items));
+    compressBoxesTwice(items);
 }
 
 template<class T>
-void printFirstItemThenFirstHalfThenSayHi100Times(const T items[], int size) {
+void printFirstItemThenFirstHalfThenSayHi100Times(vector<T> items) {
     cout << items[0] << endl;
-    auto middleIndex = size / 2;
+    auto middleIndex = items.size() / 2;
     auto index = 0;
 
     while (index < middleIndex) {
-        cout << items[index]<< endl;
+        cout << items[index] << endl;
         index++;
     }
     for (int i = 0; i < 100; ++i) {
@@ -33,12 +34,12 @@ void printFirstItemThenFirstHalfThenSayHi100Times(const T items[], int size) {
 } // O(1 + n/2 + 100) --> O(n/2 + 101) --> O(n + 1) --> O(n)
 
 template<class T>
-void compressBoxesTwice(const T boxes[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << boxes[i] << endl;
+void compressBoxesTwice(vector<T> boxes) {
+    for (const auto box: boxes) {
+        cout << box << endl;
     }
 
-    for (int i = 0; i < size; i++) {
-        cout << boxes[i] << endl;
+    for (const auto box: boxes) {
+        cout << box << endl;
     }
 } // O(2n) --> O(n)
