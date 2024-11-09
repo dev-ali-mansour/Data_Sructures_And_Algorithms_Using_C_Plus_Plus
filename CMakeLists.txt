@@ -14,4 +14,5 @@ add_executable(Data_Structures_And_Algorithms
         #        big_o/twitter.cpp
         big_o/log_all_pairs.cpp
         big_o/exercise_1_solution.cpp
+        big_o/exercise_2_solution.cpp
 )
