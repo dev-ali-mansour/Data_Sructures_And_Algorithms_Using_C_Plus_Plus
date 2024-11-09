@@ -5,5 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Data_Sructures_And_Algorithms
         #        big_o/big_o.cpp
-        big_o/find_nemo.cpp
+        #        big_o/find_nemo.cpp
+        big_o/rule1.cpp
 )
