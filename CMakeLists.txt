@@ -9,5 +9,6 @@ add_executable(Data_Sructures_And_Algorithms
         #        big_o/rule1.cpp
         #        big_o/rule2.cpp
         #        big_o/rule3.cpp
-        big_o/rule4.cpp
+        #        big_o/rule4.cpp
+        big_o/space_complexity.cpp
 )
