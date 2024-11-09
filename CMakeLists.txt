@@ -10,5 +10,6 @@ add_executable(Data_Structures_And_Algorithms
         #        big_o/rule2.cpp
         #        big_o/rule3.cpp
         #        big_o/rule4.cpp
-        big_o/space_complexity.cpp
+        #        big_o/space_complexity.cpp
+        big_o/twitter.cpp
 )
