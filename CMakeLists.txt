@@ -16,5 +16,6 @@ add_executable(Data_Structures_And_Algorithms
         #        big_o/exercise_1_solution.cpp
         #        big_o/exercise_2_solution.cpp
         #        interview/exercise1_solution.cpp
-        interview/google_interview_solution.cpp
+#        interview/google_interview_solution.cpp
+        data_structures/array/implementation.cpp
 )
