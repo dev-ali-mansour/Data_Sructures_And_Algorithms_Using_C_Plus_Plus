@@ -19,5 +19,6 @@ add_executable(Data_Structures_And_Algorithms
         #        interview/google_interview_solution.cpp
         #        data_structures/array/implementation.cpp
         #        algorithms/sorting/bubble_sort.cpp
-        algorithms/sorting/selection_sort.cpp
+        #        algorithms/sorting/selection_sort.cpp
+        algorithms/sorting/insertion_sort.cpp
 )
